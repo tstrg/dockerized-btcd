@@ -27,7 +27,7 @@ The only requirements for the btcd is to have `Docker` and `Docker Compose` inst
         
 3. Run docker container
         
-		In production environment change all critital parametes like RPCUSER, RPCPASS, DEBUG, set NETWORK etc.
+	In production environment change all critital parametes like RPCUSER, RPCPASS, DEBUG, set NETWORK etc.
             
 		docker run -d -t --name btcd-node -e RPCUSER=RPCUSER -e RPCPASS=RPCPASS -e NETWORK=testnet -e DEBUG=info -p 18333:18333 -p 127.0.0.1:18334:18334 -v btcd-rpc:/rpc -v btcd-data:/data btcd-node            
 
